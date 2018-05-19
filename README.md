@@ -2,11 +2,12 @@
 
 This is a small web-based application that helps you to exercise in Russian to English translations.
 
+
+![alt text](https://raw.githubusercontent.com/generall/translates/master/docs/screen.png)
+
 # Description
 
 Clone this repo, [register](https://tech.yandex.com/translate/) Yandex transtation API key service (optional) and run:
-
-![alt text](https://raw.githubusercontent.com/generall/translates/master/docs/screen.png)
 
 ```
 YANDEX_API_KEY=<YOUR_KEY> FLASK_APP=server.py flask run
