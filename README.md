@@ -1,8 +1,8 @@
-#translates
+# translates
 
 This is a small web-based application that helps you to exercise in Russian to English translations.
 
-#Description
+# Description
 
 Clone this repo, [register](https://tech.yandex.com/translate/) Yandex transtation API key service (optional) and run:
 
