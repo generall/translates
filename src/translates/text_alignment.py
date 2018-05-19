@@ -17,10 +17,8 @@ class TextAligner:
         pass
 
     def split_sentences(self, text, lang=None):
-
-            text = re.sub('\([^\)]+\)', '', text)
-            text = re.sub('e.g.', 'For example', text, flags=re.IGNORECASE)  # Because fuck abbreviations
-            return nltk.sent_tokenize(text, lang)
+        text = text.strip().replace('\n', ' ')
+        return nltk.sent_tokenize(text, lang)
 
     def align(self, text_en, text_ru):
         return zip(
