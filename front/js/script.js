@@ -30,7 +30,7 @@ var vueDiff = new Vue({
         commit: function(){
             this.$http.post('/commit', {
                 en_text: this.orig,
-                user_text: this.userText
+                user_text: JSON.stringify(this.diff)
             }).then(response => {
                 this.orig = response.body.en_text;
                 this.translation = response.body.ru_text_orig;

@@ -15,7 +15,7 @@ app = Flask(__name__, static_url_path=STATIC_PATH)
 class Controller:
     def __init__(self):
         self.dialogs = defaultdict(dict)
-        path = os.path.join(DATA_PATH, "stories", "*")
+        path = os.path.join(DATA_PATH, "stories", "yandex*")
         self.loader = TextsLoader(glob.glob(path))
         self.translator = YandexTranslator()
         self.filename = os.path.join(DATA_PATH, "saved.tsv")
